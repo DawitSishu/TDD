@@ -66,6 +66,7 @@ function CustomAppBar({ isWhite, reload }) {
         position="fixed"
         className={navColour ? "sticky" : "navbar"}
         sx={{ backgroundColor: "transparent" }}
+        elevation={0}
       >
         <Toolbar>
           <Link to="/">
