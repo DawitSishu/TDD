@@ -2,8 +2,11 @@ import React, { Suspense } from "react";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import Loader from "./Components/Loader";
 // import ShatteredImage from "./Components/Shatter";
-import Navbar from "./Components/Navbar";
+// import Navbar from "./Components/Navbar";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+const Home = React.lazy(() => import("./Components/Home"));
 
 const lightTheme = createTheme({
   palette: {
@@ -28,15 +31,15 @@ const lightTheme = createTheme({
       xl: 1920,
     },
   },
-  // components: {
-  //   MuiCssBaseline: {
-  //     styleOverrides: {
-  //       body: {
-  //         background: "linear-gradient(150deg,#ffffff 20%, #a6cdf7 140%)"
-  //       },
-  //     },
-  //   },
-  // },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          background: "linear-gradient(150deg,#fffff 20%, #fff4d9 140%)",
+        },
+      },
+    },
+  },
 });
 
 // color pallets
@@ -56,7 +59,7 @@ const App = () => {
             path="/"
             element={
               <Suspense fallback={<Loader />}>
-                <Navbar />
+                <Home />
               </Suspense>
             }
           />
