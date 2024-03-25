@@ -1,6 +1,7 @@
 import React from "react";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import Loader from "./Components/Loader";
+import ShatteredImage from "./Components/Shatter";
 
 const lightTheme = createTheme({
   palette: {
@@ -46,7 +47,7 @@ const App = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <CssBaseline />
-      <Loader />
+      <ShatteredImage />
     </ThemeProvider>
   );
 };
