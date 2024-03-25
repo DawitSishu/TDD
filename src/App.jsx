@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import Loader from "./Components/Loader";
-import ShatteredImage from "./Components/Shatter";
+// import ShatteredImage from "./Components/Shatter";
+import Navbar from "./Components/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const lightTheme = createTheme({
   palette: {
@@ -47,7 +49,19 @@ const App = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <CssBaseline />
-      <ShatteredImage />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Navbar />
+              </Suspense>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };
