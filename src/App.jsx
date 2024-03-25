@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
+import Loader from "./Components/Loader";
 
-function App() {
-  const [count, setCount] = useState(0)
+const lightTheme = createTheme({
+  palette: {
+    mode: "light",
+    // primary: {
+    //   main: "#05223b",
+    // },
+    // secondary: {
+    //   main: "#EEE2B1",
+    // },
+    // tertiary: {
+    //   main: "#FFFFFF",
+    // },
+    // background: {},
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 768,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+  // components: {
+  //   MuiCssBaseline: {
+  //     styleOverrides: {
+  //       body: {
+  //         background: "linear-gradient(150deg,#ffffff 20%, #a6cdf7 140%)"
+  //       },
+  //     },
+  //   },
+  // },
+});
 
+// color pallets
+// #090909
+// #F2EED7
+// #F2B31D
+// #7C7C7C
+
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <ThemeProvider theme={lightTheme}>
+      <CssBaseline />
+      <Loader />
+    </ThemeProvider>
+  );
+};
 
-export default App
+export default App;
