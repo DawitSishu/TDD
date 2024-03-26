@@ -1,6 +1,6 @@
 .sticky {
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px #7C7C7C !important;
+  box-shadow: 0px 1px 10px 0px #7C7C7C !important;
   backdrop-filter: blur(15px) !important;
 }
 .navbar {
