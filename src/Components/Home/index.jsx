@@ -1,7 +1,9 @@
 import React from "react";
 import Navbar from "../Navbar";
-import { Grid, Typography, Box, Paper } from "@mui/material";
+import { Grid, Typography, Box, Paper, Button } from "@mui/material";
 import test from "../../assets/test.jpg";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const ImageBox = ({ imageSrc }) => {
@@ -55,6 +57,18 @@ const Index = () => {
                 Connect online and in-person, find opportunities, learn,
                 collaborate and grow with a community of people just like you.
               </Typography>
+              <br />
+              <Link
+                to="https://www.linkedin.com/company/disruptorsden/"
+                target="_blank"
+              >
+                <Button variant="contained" sx={{ color: "white" }}>
+                  Join Us <LinkedInIcon sx={{ ml: 1 }} />
+                </Button>
+              </Link>
+              <Button sx={{ ml: 3, color: "black" }} variant="outlined">
+                Events
+              </Button>
             </Grid>
           </Grid>
         </Grid>

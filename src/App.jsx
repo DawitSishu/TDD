@@ -11,9 +11,9 @@ const Home = React.lazy(() => import("./Components/Home"));
 const lightTheme = createTheme({
   palette: {
     mode: "light",
-    // primary: {
-    //   main: "#05223b",
-    // },
+    primary: {
+      main: "#F2B31D",
+    },
     // secondary: {
     //   main: "#EEE2B1",
     // },
