@@ -8,6 +8,7 @@ import {
   Button,
   Divider,
   useMediaQuery,
+  Icon,
 } from "@mui/material";
 import test from "../../assets/test.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -123,17 +124,28 @@ const Index = () => {
           />
         </Grid>
         <Grid container justifyContent="center" spacing={2} p={5}>
-          {data.map((item) => (
-            <Grid key={item} item xs={12} sm={4} style={{ width: "100%" }}>
+          {data.map((item, idx) => (
+            <Grid key={idx} item xs={12} sm={4} style={{ width: "100%" }}>
               <Paper
-                style={{
-                  height: "100%",
+                elevation={3}
+                sx={{
+                  minHeight: "300px",
                   display: "flex",
+                  flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
+                  padding: "20px",
+                  textAlign: "center",
+                  borderRadius: "15px",
                 }}
               >
-                {item.title}
+                <item.icon sx={{ fontSize: 60, color: "#F2B31D" }} />
+                <br />
+                <Typography variant="h5" gutterBottom>
+                  {item.title}
+                </Typography>
+                <br />
+                <Typography variant="body1">{item.detail}</Typography>
               </Paper>
             </Grid>
           ))}
