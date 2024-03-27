@@ -151,6 +151,35 @@ const Index = () => {
           ))}
         </Grid>
       </Grid>
+      <br />
+      <Grid container>
+        <Grid item xs={12}>
+          <Typography variant="h3" textAlign="center">
+            We are{" "}
+            <span style={{ color: "#F2B31D", fontWeight: "bold" }}>
+              Disruptors
+            </span>
+          </Typography>
+          <Divider
+            sx={{
+              marginTop: 2,
+              width: "10%",
+              height: "2px",
+              margin: "20px auto",
+              backgroundColor: "#F2B31D",
+            }}
+          />
+          <Box sx={{ pl: ismobile ? 2 : 40, pr: ismobile ? 2 : 40 }}>
+            <Typography textAlign="center">
+              A diverse group of remote and digital workers including software
+              engineers, freelancers, designers, creatives & influencers,
+              writers, product, growth & sales specialists, operators,
+              investors, and founders united with a common mission of building
+              the home for digital talents.
+            </Typography>
+          </Box>
+        </Grid>
+      </Grid>
     </div>
   );
 };
