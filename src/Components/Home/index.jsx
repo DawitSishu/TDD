@@ -16,24 +16,6 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import { data } from "./detailsData";
 
-const ImageBox = ({ imageSrc }) => {
-  return (
-    <Grid item xs={12} sm={6} md={4}>
-      <Paper style={{ padding: 20, textAlign: "center" }}>
-        <img
-          src={imageSrc}
-          alt="box"
-          style={{
-            maxWidth: "100%",
-            maxHeight: "100%",
-            width: "auto",
-            height: "auto",
-          }}
-        />
-      </Paper>
-    </Grid>
-  );
-};
 
 const Index = () => {
   const ismobile = useMediaQuery("(max-width:860px)");
