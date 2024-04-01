@@ -44,7 +44,7 @@ const Disruptors = () => {
             alignItems: "center",
             justifyContent: "center",
             height: "100%",
-            padding: "2px",
+            padding: "2px" ,
           }}
         >
           <IconButton sx={{ color: "#F2B31D", backgroundColor: "#7C7C7C" }}>
