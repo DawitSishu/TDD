@@ -15,10 +15,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
 import "./style.css";
 import { data } from "./detailsData";
-
+import Disruptors from "./Disruptors";
 
 const Index = () => {
   const ismobile = useMediaQuery("(max-width:860px)");
+
   return (
     <div>
       <Navbar />
@@ -162,6 +163,13 @@ const Index = () => {
           </Box>
         </Grid>
       </Grid>
+      <br />
+      <Grid container justifyContent="center">
+        <div style={{ width: ismobile ? "100%" : "72%" }}>
+          <Disruptors />
+        </div>
+      </Grid>
+      <br />
     </div>
   );
 };

@@ -1,0 +1,26 @@
+.carousel-container {
+margin: 20px 0;
+position: relative;
+overflow: hidden;
+max-width: calc(100% - 2.5%);
+}
+
+.carousel-item {
+position: absolute;
+}
+
+.wrapper-container {
+position: relative;
+}
+
+#left {
+position: absolute;
+left: -46px;
+top: 50%;
+}
+
+#right {
+position: absolute;
+right: -12px;
+top: 50%;
+}
