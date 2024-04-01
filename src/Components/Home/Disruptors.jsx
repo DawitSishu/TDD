@@ -10,7 +10,7 @@ import { disruptors } from "./disruptors";
 
 const Item = ({ name, loc, img }) => {
   return (
-    <Card sx={{ maxWidth: 340, height:"100%" }}>
+    <Card sx={{ maxWidth: 340, height: "100%" }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -47,7 +47,7 @@ const Disruptors = () => {
             padding: "2px",
           }}
         >
-          <IconButton sx={{ color: "#F2B31D", backgroundColor: "black" }}>
+          <IconButton sx={{ color: "#F2B31D", backgroundColor: "#7C7C7C" }}>
             <ArrowRight />
           </IconButton>
         </div>
@@ -61,14 +61,14 @@ const Disruptors = () => {
             height: "100%",
           }}
         >
-          <IconButton sx={{ color: "#F2B31D", backgroundColor: "black" }}>
+          <IconButton sx={{ color: "#F2B31D", backgroundColor: "#7C7C7C" }}>
             <ArrowLeft />
           </IconButton>
         </div>
       }
     >
       {disruptors.map((dis, idx) => (
-        <div key={idx} style={{ marginRight: "7px", height:"100%" }}>
+        <div key={idx} style={{ marginRight: "7px", height: "100%" }}>
           <Item name={dis.name} loc={dis.loc} img={dis.img} />
         </div>
       ))}

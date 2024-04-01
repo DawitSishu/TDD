@@ -9,6 +9,7 @@ import {
   Divider,
   useMediaQuery,
   Icon,
+  IconButton,
 } from "@mui/material";
 import test from "../../assets/test.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -168,7 +169,40 @@ const Index = () => {
         <div style={{ width: ismobile ? "100%" : "72%" }}>
           <Disruptors />
         </div>
+        <br />
+        <Grid item xs={12}>
+          <Grid container justifyContent="center">
+            <IconButton
+              sx={{
+                color: "white",
+                backgroundColor: "#F2B31D",
+                borderRadius: "28px",
+                transition: "all 0.1s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                  backgroundColor: "#7C7C7C",
+                  elevation: "0",
+                },
+              }}
+            >
+              <Link
+                to="https://www.linkedin.com/company/disruptorsden/"
+                style={{ textDecoration: "none", color: "inherit" }}
+                target="_blank"
+              >
+                <Button
+                  sx={{
+                    color: "white",
+                  }}
+                >
+                  Join Community
+                </Button>
+              </Link>
+            </IconButton>
+          </Grid>
+        </Grid>
       </Grid>
+
       <br />
     </div>
   );
