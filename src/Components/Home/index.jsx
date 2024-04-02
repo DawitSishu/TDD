@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import { data } from "./detailsData";
 import Disruptors from "./Disruptors";
+import Gallery from "./Gallery";
 
 const Index = () => {
   const ismobile = useMediaQuery("(max-width:860px)");
@@ -169,8 +170,7 @@ const Index = () => {
         <div style={{ width: ismobile ? "100%" : "72%" }}>
           <Disruptors />
         </div>
-        <br />
-        <Grid item xs={12}>
+        <Grid item xs={12} mt={2}>
           <Grid container justifyContent="center">
             <IconButton
               sx={{
@@ -202,8 +202,8 @@ const Index = () => {
           </Grid>
         </Grid>
       </Grid>
-
       <br />
+      <Gallery />
     </div>
   );
 };
