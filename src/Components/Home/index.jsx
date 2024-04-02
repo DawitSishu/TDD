@@ -20,6 +20,7 @@ import Disruptors from "./Disruptors";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
 import Footer from "../Footer";
+import footerBackgroundImage from "../../assets/tdd.png";
 
 const Index = () => {
   const ismobile = useMediaQuery("(max-width:860px)");
@@ -27,70 +28,93 @@ const Index = () => {
   return (
     <div style={{ overflowX: "hidden" }}>
       <Navbar />
-      <Grid container justifyContent="center" spacing={4}>
-        <Grid item xs={12} sm={6}>
-          <Grid
-            container
-            sx={{
-              width: "100%",
-              flexDirection: "column",
-              height: "100vh",
-            }}
-            p={7}
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Grid item>
-              <Typography variant="h3" fontWeight="bold">
-                Home to entrepreneurs and aspiring ones
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body1">
-                Connect online and in-person, find opportunities, learn,
-                collaborate and grow with a community of people just like you.
-              </Typography>
-              <br />
-              <Link
-                to="https://www.linkedin.com/company/disruptorsden/"
-                target="_blank"
-              >
-                <Button variant="contained" sx={{ color: "white" }}>
-                  Join Us <LinkedInIcon sx={{ ml: 1 }} />
-                </Button>
-              </Link>
-              <Button sx={{ ml: 3, color: "black" }} variant="outlined">
-                Events
-              </Button>
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={6}
+      <Box
+        sx={{
+          backgroundImage: `url(${footerBackgroundImage})`,
+          // paddingTop: "50px",
+          backgroundSize: "cover",
+          backgroundPosition: "95% 35%",
+        }}
+      >
+        <Box
           sx={{
-            height: "100vh",
-            width: "100%",
-            display: ismobile ? "none" : "block",
+            backgroundColor: "#000000",
+            opacity: "70%",
+            // p: ismobile ? "15px" : null,
           }}
         >
-          <div id="main">
-            <div className="box blue">
-              <div className="image"></div>
-            </div>
-            <div className="box green">
-              <div className="image"></div>
-            </div>
-            <div className="box red">
-              <div className="image"></div>
-            </div>
-            <div className="box yellow">
-              <div className="image"></div>
-            </div>
-          </div>
-        </Grid>
-      </Grid>
+          <Grid
+            container
+            // justifyContent="center"
+            spacing={4}
+            sx={{ color: "white" }}
+          >
+            <Grid item xs={12} sm={6}>
+              <Grid
+                container
+                sx={{
+                  width: "100%",
+                  flexDirection: "column",
+                  height: "100vh",
+                }}
+                p={7}
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Grid item>
+                  <Typography variant="h3" fontWeight="bold">
+                    Home to entrepreneurs and aspiring ones
+                  </Typography>
+                </Grid>
+                <Grid item>
+                  <Typography variant="body1">
+                    Connect online and in-person, find opportunities, learn,
+                    collaborate and grow with a community of people just like
+                    you.
+                  </Typography>
+                  <br />
+                  <Link
+                    to="https://www.linkedin.com/company/disruptorsden/"
+                    target="_blank"
+                  >
+                    <Button variant="contained" sx={{ color: "white" }}>
+                      Join Us <LinkedInIcon sx={{ ml: 1 }} />
+                    </Button>
+                  </Link>
+                  <Button sx={{ ml: 3 }} variant="outlined">
+                    Events
+                  </Button>
+                </Grid>
+              </Grid>
+            </Grid>
+            {/* <Grid
+              item
+              xs={12}
+              sm={6}
+              sx={{
+                height: "100vh",
+                width: "100%",
+                display: ismobile ? "none" : "block",
+              }}
+            >
+              <div id="main">
+                <div className="box blue">
+                  <div className="image"></div>
+                </div>
+                <div className="box green">
+                  <div className="image"></div>
+                </div>
+                <div className="box red">
+                  <div className="image"></div>
+                </div>
+                <div className="box yellow">
+                  <div className="image"></div>
+                </div>
+              </div>
+            </Grid> */}
+          </Grid>
+        </Box>
+      </Box>
       <br />
       <Grid container justifyContent="center">
         <Grid xs={12}>
