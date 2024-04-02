@@ -1,30 +1,27 @@
-import tdd from "../../assets/tdd.png";
-import tst from "../../assets/test.jpg";
+import abeni from "../../assets/abeni.jpeg";
+import jo from "../../assets/jo.jpeg";
+import abel from "../../assets/abel.jpeg";
+import tam from "../../assets/tam.jpeg";
 
 export const disruptors = [
   {
-    name: "Abenazzar B. Tadesse",
-    loc: "Aspiring Enterpreneur",
-    img: tdd,
+    name: "Yohannes Taye",
+    loc: "Founder",
+    img: jo,
   },
   {
     name: "Abenazzar B. Tadesse",
-    loc: "Aspiring Enterpreneur",
-    img: tst,
+    loc: "Co-founder and Community Organizer",
+    img: abeni,
   },
   {
-    name: "Abenazzar B. Tadesse",
-    loc: "Aspiring Enterpreneur",
-    img: tdd,
+    name: "Tamirat Sultan",
+    loc: "Co-founder and Community Organizer",
+    img: tam,
   },
   {
-    name: "Abenazzar B. Tadesse",
-    loc: "Aspiring Enterpreneur",
-    img: tst,
-  },
-  {
-    name: "Abenazzar B. Tadesse",
-    loc: "Aspiring Enterpreneur",
-    img: tdd,
+    name: "Abel Mulugeta",
+    loc: "Community Organizer",
+    img: abel,
   },
 ];

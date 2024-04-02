@@ -23,6 +23,7 @@ const Item = ({ name, loc, img }) => {
           height="140"
           image={img}
           alt="green iguana"
+          style={{ objectFit: "contain" }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" textAlign="center">

@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Grid, IconButton, useMediaQuery } from "@mui/material";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
-import tst from "../../assets/test.jpg";
-import tdd from "../../assets/tdd.png";
+import tdd1 from "../../assets/tdd1.jpg";
+import tdd2 from "../../assets/tdd2.jpg";
+import tdd3 from "../../assets/tdd3.jpg";
+import tdd4 from "../../assets/tdd4.jpg";
+import tdd5 from "../../assets/tdd5.jpg";
+import tdd6 from "../../assets/tdd6.jpg";
 
-const imgUrls = [tst, tdd, tst, tdd, tst, tdd];
+const imgUrls = [tdd1, tdd2, tdd3, tdd4, tdd5, tdd6];
 
 const Gallery = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

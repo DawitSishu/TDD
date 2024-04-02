@@ -7,6 +7,7 @@ import Loader from "./Components/Loader";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Home = React.lazy(() => import("./Components/Home"));
+const Soon = React.lazy(() => import("./Components/Comming"));
 
 const lightTheme = createTheme({
   palette: {
@@ -60,6 +61,15 @@ const App = () => {
             element={
               <Suspense fallback={<Loader />}>
                 <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path="/*"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Soon />
               </Suspense>
             }
           />
