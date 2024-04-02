@@ -29,7 +29,7 @@ const Contact = () => {
           <ListItemIcon>
             <LocalPhoneIcon />
           </ListItemIcon>
-          <Typography>+251913398561</Typography>
+          <Typography>+251-9-133-985-61</Typography>
         </ListItem>
         <ListItem>
           <ListItemIcon>

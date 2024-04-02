@@ -19,6 +19,7 @@ import { data } from "./detailsData";
 import Disruptors from "./Disruptors";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
+import Footer from "../Footer";
 
 const Index = () => {
   const ismobile = useMediaQuery("(max-width:860px)");
@@ -218,6 +219,8 @@ const Index = () => {
       <Grid>
         <Contact />
       </Grid>
+      <br />
+      <Footer />
     </div>
   );
 };
