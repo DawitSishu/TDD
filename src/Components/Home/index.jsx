@@ -18,12 +18,13 @@ import "./style.css";
 import { data } from "./detailsData";
 import Disruptors from "./Disruptors";
 import Gallery from "./Gallery";
+import Contact from "./Contact";
 
 const Index = () => {
   const ismobile = useMediaQuery("(max-width:860px)");
 
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <Navbar />
       <Grid container justifyContent="center" spacing={4}>
         <Grid item xs={12} sm={6}>
@@ -214,6 +215,9 @@ const Index = () => {
         </Grid>
       </Grid>
       <br />
+      <Grid>
+        <Contact />
+      </Grid>
     </div>
   );
 };

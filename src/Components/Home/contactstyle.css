@@ -1,0 +1,7 @@
+.home-map {
+  position: relative;
+  border: 3px solid gold;
+  box-shadow: 4px 4px 16px rgba(124, 124, 124, 0.8);
+  border-radius: 10px;
+  overflow: hidden;
+}
