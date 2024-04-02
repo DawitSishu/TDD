@@ -4,7 +4,13 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions, IconButton } from "@mui/material";
+import {
+  Button,
+  CardActionArea,
+  CardActions,
+  IconButton,
+  useMediaQuery,
+} from "@mui/material";
 import logo from "../../assets/logo.jpg";
 import { disruptors } from "./disruptors";
 
@@ -32,10 +38,12 @@ const Item = ({ name, loc, img }) => {
 };
 
 const Disruptors = () => {
+  const isMobile = useMediaQuery("(max-width:860px)");
+
   return (
     <Carousel
-      show={3}
-      slide={3}
+      show={isMobile ? 1 : 3}
+      slide={isMobile ? 1 : 3}
       swiping={true}
       rightArrow={
         <div
@@ -44,7 +52,7 @@ const Disruptors = () => {
             alignItems: "center",
             justifyContent: "center",
             height: "100%",
-            padding: "2px" ,
+            padding: "2px",
           }}
         >
           <IconButton sx={{ color: "#F2B31D", backgroundColor: "#7C7C7C" }}>

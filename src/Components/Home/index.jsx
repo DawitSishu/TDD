@@ -203,7 +203,17 @@ const Index = () => {
         </Grid>
       </Grid>
       <br />
-      <Gallery />
+      <Grid container justifyContent="center">
+        <Grid item xs={12} mb={ismobile ? 0 : 2}>
+          <Typography textAlign="center" variant="h3">
+            Gallery
+          </Typography>
+        </Grid>
+        <Grid item sx={{ width: ismobile ? "100%" : "72%" }}>
+          <Gallery />
+        </Grid>
+      </Grid>
+      <br />
     </div>
   );
 };
