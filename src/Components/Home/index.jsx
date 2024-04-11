@@ -51,7 +51,7 @@ const Index = () => {
         </Grid>
         <Grid container justifyContent="center" spacing={2} p={5}>
           {data.map((item, idx) => (
-            <Grid key={idx} item xs={12} sm={6} style={{ width: "100%" }}>
+            <Grid key={idx} item xs={12} sm={6}  style={{ width: "100%" }}>
               <Paper
                 elevation={3}
                 sx={{
