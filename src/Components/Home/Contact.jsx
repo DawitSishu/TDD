@@ -9,8 +9,9 @@ const Contact = () => {
   return (
     <Grid container spacing={2} sx={{ padding: "20px", margin: 1 }}>
       <Grid item xs={12}>
-        <Typography variant="h4" align="center" sx={{ marginBottom: "20px" }}>
-          Contact us
+        <Typography variant="h3" textAlign="center">
+          <span style={{ color: "#F2B31D", fontWeight: "bold" }}>Contact</span>{" "}
+          US
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6} sx={{ paddingLeft: 2 }}>

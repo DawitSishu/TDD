@@ -23,6 +23,7 @@ import Footer from "../Footer";
 import footerBackgroundImage from "../../assets/tdd.png";
 import Carousel from "./Carousel";
 import About from "./About";
+import Events from "./Events";
 
 const Index = () => {
   const ismobile = useMediaQuery("(max-width:860px)");
@@ -81,7 +82,9 @@ const Index = () => {
       <br />
       <About />
       <br />
-
+      <br />
+      <Events />
+      <br />
       <Grid container justifyContent="center">
         <Grid item xs={12} mb={ismobile ? 0 : 2}>
           <Typography textAlign="center" variant="h3">
@@ -93,11 +96,6 @@ const Index = () => {
         </Grid>
       </Grid>
       <br />
-      <Grid>
-        <Contact />
-      </Grid>
-      <br />
-
       <Grid container>
         <Grid item xs={12}>
           <Typography variant="h3" textAlign="center">
@@ -131,6 +129,10 @@ const Index = () => {
         <div style={{ width: ismobile ? "100%" : "72%" }}>
           <Disruptors />
         </div>
+      </Grid>
+      <br />
+      <Grid>
+        <Contact />
       </Grid>
       <br />
       <br />

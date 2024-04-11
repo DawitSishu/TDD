@@ -11,7 +11,7 @@ import {
   IconButton,
   useMediaQuery,
 } from "@mui/material";
-import logo from "../../assets/logo.jpg";
+
 import { disruptors } from "./disruptorsData";
 import { Link } from "react-router-dom";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
