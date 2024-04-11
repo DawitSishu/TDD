@@ -24,7 +24,7 @@ const Contact = () => {
           <ListItemIcon>
             <EmailIcon />
           </ListItemIcon>
-          <Typography>yohannestaye83@gmail.com</Typography>
+          <Typography>contact@thedisruptorsden.org</Typography>
         </ListItem>
         <ListItem>
           <ListItemIcon>
@@ -36,9 +36,7 @@ const Contact = () => {
           <ListItemIcon>
             <LocationOnIcon />
           </ListItemIcon>
-          <Typography>
-            ALX Ethiopia |Hayahulet Mazoria Hub, 6th Floor|
-          </Typography>
+          <Typography>ALX Ethiopia 22 Hub</Typography>
         </ListItem>
       </Grid>
       <Grid

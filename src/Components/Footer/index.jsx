@@ -120,7 +120,8 @@ export default function Footer() {
                   sx={{ fontSize: isMobile ? "18px" : null, color: "#ffffff" }}
                   color="text.secondary"
                 >
-                  <LocationOnIcon /> ALX Ethiopia |Hayahulet Mazoria Hub, 6th Floor|
+                  <LocationOnIcon />
+                  ALX Ethiopia 22 Hub
                 </Typography>
               </Box>
             </Grid>

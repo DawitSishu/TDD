@@ -33,7 +33,7 @@ const index = () => {
             <div className="screen_out">
               <div className="screen_out1">
                 <div className="screen">
-                  <span className="notfound_text">Comming Soon</span>
+                  <span className="notfound_text">Not Found</span>
                 </div>
               </div>
             </div>
@@ -64,6 +64,11 @@ const index = () => {
           <div className="base2"></div>
           <div className="base3"></div>
         </div>
+      </div>
+      <div class="text_404">
+        <div class="text_4041">4</div>
+        <div class="text_4042">0</div>
+        <div class="text_4043">4</div>
       </div>
     </div>
   );

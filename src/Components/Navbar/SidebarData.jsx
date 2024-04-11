@@ -1,27 +1,22 @@
 export const SidebarData = [
   {
     title: "Home",
-    path: "/",
+    path: "hero",
     cName: "nav-text",
   },
   {
     title: "About Us",
-    path: "/about",
+    path: "about",
     cName: "nav-text",
   },
   {
     title: "Events",
-    path: "/events",
+    path: "events",
     cName: "nav-text",
   },
   {
-    title: "Trips",
-    path: "/trips",
-    cName: "nav-text",
-  },
-  {
-    title: "Media",
-    path: "/media",
+    title: "Team",
+    path: "team",
     cName: "nav-text",
   },
   {

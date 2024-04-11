@@ -7,7 +7,8 @@ import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-scroll";
+import { Link as Linker, useLocation } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -22,21 +23,6 @@ import {
   MenuList,
   MenuItem,
   useMediaQuery,
-} from "@mui/material";
-import {
-  Select,
-  TextField,
-  Checkbox,
-  FormGroup,
-  FormControlLabel,
-  FormControl,
-  InputLabel,
-  Grid,
-  CircularProgress,
-  Container,
-  Stepper,
-  Step,
-  StepLabel,
 } from "@mui/material";
 import logo from "../../assets/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -69,7 +55,14 @@ function CustomAppBar({ isWhite, reload }) {
         elevation={0}
       >
         <Toolbar>
-          <Link to="/">
+          <Link
+            activeClass="active"
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <IconButton size="large" edge="start">
               <img
                 src={logo}
@@ -94,7 +87,15 @@ function CustomAppBar({ isWhite, reload }) {
               textAlign: "center",
             }}
           >
-            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            <Link
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <Button
                 sx={{
                   ml: 10,
@@ -111,7 +112,12 @@ function CustomAppBar({ isWhite, reload }) {
               </Button>
             </Link>
             <Link
-              to="/about"
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <Button
@@ -129,7 +135,12 @@ function CustomAppBar({ isWhite, reload }) {
               </Button>
             </Link>
             <Link
-              to="/events"
+              activeClass="active"
+              to="events"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <Button
@@ -147,7 +158,12 @@ function CustomAppBar({ isWhite, reload }) {
               </Button>
             </Link>
             <Link
-              to="/trips"
+              activeClass="active"
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
               style={{ textDecoration: "none", color: "inherit" }}
             >
               <Button
@@ -161,10 +177,10 @@ function CustomAppBar({ isWhite, reload }) {
                   },
                 }}
               >
-                Trips
+                Team
               </Button>
             </Link>
-            <Link
+            {/* <Link
               to="/media"
               style={{ textDecoration: "none", color: "inherit" }}
             >
@@ -181,7 +197,7 @@ function CustomAppBar({ isWhite, reload }) {
               >
                 Media
               </Button>
-            </Link>
+            </Link> */}
           </Stack>
           <IconButton
             edge="end"
@@ -199,7 +215,7 @@ function CustomAppBar({ isWhite, reload }) {
               },
             }}
           >
-            <Link
+            <Linker
               to="https://www.linkedin.com/company/disruptorsden/"
               style={{ textDecoration: "none", color: "inherit" }}
               target="_blank"
@@ -211,7 +227,7 @@ function CustomAppBar({ isWhite, reload }) {
               >
                 Join Community
               </Button>
-            </Link>
+            </Linker>
           </IconButton>
           <IconButton
             size="large"
@@ -270,7 +286,7 @@ function CustomAppBar({ isWhite, reload }) {
                         },
                       }}
                     >
-                      <Link
+                      <Linker
                         to="https://www.linkedin.com/company/disruptorsden/"
                         style={{ textDecoration: "none", color: "inherit" }}
                         target="_blank"
@@ -282,7 +298,7 @@ function CustomAppBar({ isWhite, reload }) {
                         >
                           Join Community
                         </Button>
-                      </Link>
+                      </Linker>
                     </IconButton>
                   </ListItem>
                 );
@@ -290,6 +306,11 @@ function CustomAppBar({ isWhite, reload }) {
                 return (
                   <Link
                     to={item.path}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
                     style={{ textDecoration: "none", color: "inherit" }}
                     key={index}
                   >
