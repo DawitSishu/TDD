@@ -67,6 +67,7 @@ const Gallery = () => {
                 cursor: "pointer",
                 border:
                   currentImageIndex === index ? "2px solid #F2B31D" : "none",
+                objectFit: "cover",
               }}
             />
           </Grid>
