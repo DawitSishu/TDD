@@ -12,28 +12,35 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import logo from "../../assets/logo.jpg";
-import { disruptors } from "./disruptors";
-
-const Item = ({ name, loc, img }) => {
+import { disruptors } from "./disruptorsData";
+import { Link } from "react-router-dom";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+const Item = ({ name, loc, img, link }) => {
   return (
     <Card sx={{ maxWidth: 340, height: "100%" }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={img}
-          alt="green iguana"
-          style={{ objectFit: "contain" }}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" textAlign="center">
-            {name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary" textAlign="center">
-            {loc}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+      <CardMedia
+        component="img"
+        height="140"
+        image={img}
+        alt="green iguana"
+        style={{ objectFit: "contain" }}
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" textAlign="center">
+          {name}
+        </Typography>
+        <Typography variant="body2" color="text.secondary" textAlign="center">
+          {loc}
+        </Typography>
+
+        <Typography textAlign="center">
+          <Link to={link} target="_blank">
+            <Button variant="contained" sx={{ color: "white" }}>
+              Contact <LinkedInIcon sx={{ ml: 1 }} />
+            </Button>
+          </Link>
+        </Typography>
+      </CardContent>
     </Card>
   );
 };
@@ -78,7 +85,7 @@ const Disruptors = () => {
     >
       {disruptors.map((dis, idx) => (
         <div key={idx} style={{ marginRight: "7px", height: "100%" }}>
-          <Item name={dis.name} loc={dis.loc} img={dis.img} />
+          <Item name={dis.name} loc={dis.loc} img={dis.img} link={dis.link} />
         </div>
       ))}
     </Carousel>

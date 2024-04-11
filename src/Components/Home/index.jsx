@@ -21,7 +21,7 @@ import Gallery from "./Gallery";
 import Contact from "./Contact";
 import Footer from "../Footer";
 import footerBackgroundImage from "../../assets/tdd.png";
-import Carousel from "./Carousel"
+import Carousel from "./Carousel";
 
 const Index = () => {
   const ismobile = useMediaQuery("(max-width:860px)");
@@ -81,9 +81,9 @@ const Index = () => {
       <Grid container>
         <Grid item xs={12}>
           <Typography variant="h3" textAlign="center">
-            We are{" "}
+            Meet{" "}
             <span style={{ color: "#F2B31D", fontWeight: "bold" }}>
-              Disruptors
+              The Team
             </span>
           </Typography>
           <Divider
@@ -97,11 +97,11 @@ const Index = () => {
           />
           <Box sx={{ pl: ismobile ? 2 : 40, pr: ismobile ? 2 : 40 }}>
             <Typography textAlign="center">
-              A diverse group of remote and digital workers including software
-              engineers, freelancers, designers, creatives & influencers,
-              writers, product, growth & sales specialists, operators,
-              investors, and founders united with a common mission of building
-              the home for digital talents.
+              Meet the Team: Behind The Disruptors Den stands a dynamic team of
+              founders and organizers. United by a vision to revolutionize the
+              entrepreneurial journey, they blend diverse expertise and a shared
+              passion for innovation to foster a community where ideas flourish,
+              partnerships form, and future leaders emerge!
             </Typography>
           </Box>
         </Grid>
