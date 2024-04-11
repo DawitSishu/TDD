@@ -22,6 +22,7 @@ import Contact from "./Contact";
 import Footer from "../Footer";
 import footerBackgroundImage from "../../assets/tdd.png";
 import Carousel from "./Carousel";
+import About from "./About";
 
 const Index = () => {
   const ismobile = useMediaQuery("(max-width:860px)");
@@ -78,6 +79,9 @@ const Index = () => {
         </Grid>
       </Grid>
       <br />
+      <About />
+      <br />
+
       <Grid container justifyContent="center">
         <Grid item xs={12} mb={ismobile ? 0 : 2}>
           <Typography textAlign="center" variant="h3">
