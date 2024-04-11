@@ -120,8 +120,7 @@ export default function Footer() {
                   sx={{ fontSize: isMobile ? "18px" : null, color: "#ffffff" }}
                   color="text.secondary"
                 >
-                  <LocationOnIcon /> Haya Hulet B 37/3 Ground Floor Double
-                  StoryRamesh Nagar , Near Raja Garden Chowk.Delhi: 110015
+                  <LocationOnIcon /> ALX Ethiopia |Hayahulet Mazoria Hub, 6th Floor|
                 </Typography>
               </Box>
             </Grid>

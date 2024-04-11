@@ -36,8 +36,7 @@ const Contact = () => {
             <LocationOnIcon />
           </ListItemIcon>
           <Typography>
-            Haya Hulet B 37/3 Ground Floor Double StoryRamesh Nagar , Near Raja
-            Garden Chowk.Delhi: 110015
+            ALX Ethiopia |Hayahulet Mazoria Hub, 6th Floor|
           </Typography>
         </ListItem>
       </Grid>

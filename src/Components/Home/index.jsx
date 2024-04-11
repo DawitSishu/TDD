@@ -78,6 +78,22 @@ const Index = () => {
         </Grid>
       </Grid>
       <br />
+      <Grid container justifyContent="center">
+        <Grid item xs={12} mb={ismobile ? 0 : 2}>
+          <Typography textAlign="center" variant="h3">
+            Gallery
+          </Typography>
+        </Grid>
+        <Grid item sx={{ width: ismobile ? "100%" : "72%" }}>
+          <Gallery />
+        </Grid>
+      </Grid>
+      <br />
+      <Grid>
+        <Contact />
+      </Grid>
+      <br />
+
       <Grid container>
         <Grid item xs={12}>
           <Typography variant="h3" textAlign="center">
@@ -111,53 +127,9 @@ const Index = () => {
         <div style={{ width: ismobile ? "100%" : "72%" }}>
           <Disruptors />
         </div>
-        <Grid item xs={12} mt={2}>
-          <Grid container justifyContent="center">
-            <IconButton
-              sx={{
-                color: "white",
-                backgroundColor: "#F2B31D",
-                borderRadius: "28px",
-                transition: "all 0.1s",
-                "&:hover": {
-                  transform: "scale(1.05)",
-                  backgroundColor: "#7C7C7C",
-                  elevation: "0",
-                },
-              }}
-            >
-              <Link
-                to="https://www.linkedin.com/company/disruptorsden/"
-                style={{ textDecoration: "none", color: "inherit" }}
-                target="_blank"
-              >
-                <Button
-                  sx={{
-                    color: "white",
-                  }}
-                >
-                  Join Community
-                </Button>
-              </Link>
-            </IconButton>
-          </Grid>
-        </Grid>
       </Grid>
       <br />
-      <Grid container justifyContent="center">
-        <Grid item xs={12} mb={ismobile ? 0 : 2}>
-          <Typography textAlign="center" variant="h3">
-            Gallery
-          </Typography>
-        </Grid>
-        <Grid item sx={{ width: ismobile ? "100%" : "72%" }}>
-          <Gallery />
-        </Grid>
-      </Grid>
       <br />
-      <Grid>
-        <Contact />
-      </Grid>
       <br />
       <Footer />
     </div>
