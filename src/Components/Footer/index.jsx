@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 import { Facebook, Instagram, YouTube } from "@mui/icons-material";
 import { Box, TextField, Button } from "@mui/material";
 import { styled } from "@mui/system";
-import footerBackgroundImage from "../../assets/tdd.png";
+import footerBackgroundImage from "../../assets/Tddfotter2.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -34,7 +34,7 @@ export default function Footer() {
         backgroundImage: `url(${footerBackgroundImage})`,
         // paddingTop: "50px",
         backgroundSize: "cover",
-        backgroundPosition: "95% 35%",
+        backgroundPosition: "95% 45%",
       }}
     >
       <Box
@@ -106,7 +106,7 @@ export default function Footer() {
                   sx={{ fontSize: isMobile ? "18px" : null, color: "#ffffff" }}
                 >
                   {/* {lang[3]}{" "} */}
-                  <EmailIcon /> yohannestaye83@gmail.com
+                  <EmailIcon /> contact@thedisruptorsden.org
                 </Typography>
                 <Typography
                   variant={isMobile ? null : "h6"}
@@ -172,6 +172,38 @@ export default function Footer() {
                   sx={{ height: "40px", width: "40px", color: "#ffffff" }}
                 />
               </Link>
+              <Typography
+                variant={isMobile ? null : "h6"}
+                sx={{ fontSize: isMobile ? "18px" : null, color: "#ffffff" }}
+                color="text.secondary"
+                width="100%"
+              >
+                Developed By{" "}
+                <Link
+                  to="https://www.linkedin.com/in/dawitsishu/"
+                  target="_blank"
+                  style={{
+                    textDecoration: "none",
+                    fontWeight: "bold",
+                    color: "#eee2b1",
+                  }}
+                >
+                  Dawit
+                </Link>{" "}
+                &{" "}
+                <Link
+                  to="https://www.linkedin.com/in/dagim-wallelgne/"
+                  target="_blank"
+                  style={{
+                    textDecoration: "none",
+                    fontWeight: "bold",
+                    color: "#eee2b1",
+                  }}
+                >
+                  Dagim
+                </Link>
+                {"."}
+              </Typography>
             </Grid>
           </Grid>
         </Box>

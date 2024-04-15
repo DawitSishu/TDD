@@ -12,7 +12,9 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/tddAddis.jpg";
+import Adm from "../../assets/tddAdama.jpg";
+import Adv from "../../assets/tddAdv.jpg";
 
 const eventData = [
   {
@@ -22,7 +24,7 @@ const eventData = [
     items: ["Saturday at 2:00 pm", "At the ALX Ethiopia 22 Hub"],
   },
   {
-    img: logo,
+    img: Adm,
     title: "Coffee Meetup Adama ☕",
     desc: "Held bi-weekly, It's a splendid opportunity to meet like-minded entrepreneurs and explore the realms of business together.",
     items: [
@@ -31,7 +33,7 @@ const eventData = [
     ],
   },
   {
-    img: logo,
+    img: Adv,
     title: "TDD Adventure 🌿",
     desc: "Step out of the business hustle and join us for a monthly retreat into nature. This unique event offers entrepreneurs a chance to rejuvenate, network, and gain fresh perspectives amidst serene surroundings.",
     items: [],

@@ -10,7 +10,7 @@ import {
   Icon,
   IconButton,
 } from "@mui/material";
-import image from "../../assets/tdd1.jpg";
+import image from "../../assets/tddAbout.jpg";
 
 const About = () => {
   return (
