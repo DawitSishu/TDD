@@ -12,13 +12,13 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import logo from "../../assets/tddAddis.jpg";
 import Adm from "../../assets/tddAdama.jpg";
 import Adv from "../../assets/tddAdv.jpg";
+import add from "../../assets/tddAbout.jpg";
 
 const eventData = [
   {
-    img: logo,
+    img: add,
     title: "Coffee Meetup Addis-Ababa ☕",
     desc: "Dive into the world of business. This weekly event is the perfect spot to learn new insights and connect with fellow entrepreneurs in an amazing environment.",
     items: ["Saturday at 2:00 pm", "At the ALX Ethiopia 22 Hub"],
@@ -63,7 +63,7 @@ const Events = () => {
 
 const Item = (props) => {
   return (
-    <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
+    <Card sx={{ height: "100%", display: "flex", flexDirection: "column"}}>
       <CardMedia
         component="img"
         height="230"

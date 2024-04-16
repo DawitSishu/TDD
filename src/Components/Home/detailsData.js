@@ -6,11 +6,12 @@ import {
   PeopleAlt as VirtualNetworkingIcon,
   EmojiObjects as PersonalGrowthIcon,
 } from "@mui/icons-material";
+import CoffeeIcon from '@mui/icons-material/Coffee';
 
 const iconMap = {
   Masterclass: MasterclassIcon,
   "Group Trips": GroupTripsIcon,
-  "City Hangouts and Mixers": CityHangoutsIcon,
+  "City Hangouts and Mixers": CoffeeIcon,
   "Personal Growth": PersonalGrowthIcon,
 };
 
@@ -55,27 +56,31 @@ const iconMap = {
 
 export const data = [
   {
-    title: "Coffee Meetups | Caffinate . Connect . Collaborate",
+    title: "Coffee Meetups",
+    sub:" Caffinate . Connect . Collaborate",
     detail:
       "Engage in dynamic networking events where entrepreneurs gather over coffee to exchange ideas and foster collaborations. Set in a casual environment, these meetups encourage spontaneous brainstorming and the building of valuable industry relationships, making them an ideal setting for nurturing professional growth and creativity. ",
     icon: iconMap["City Hangouts and Mixers"],
   },
   {
     title:
-      "TDD Acadamy | Building Blocks of Success: From Blueprint to Business Mastery",
+      "TDD Acadamy",
+      sub:" Building Blocks of Success: From Blueprint to Business Mastery",
     detail:
       "This comprehensive educational program equips entrepreneurs with essential skills to turn innovative ideas into thriving businesses. Offering a mix of workshops, mentorship, and hands-on sessions, the academy covers everything from initial business planning to advanced market strategies, paving the way for business mastery.",
     icon: iconMap["Masterclass"],
   },
   {
-    title: "TDD Adventure | Adventure Awaits: Forge New Paths to Partnership",
+    title: "TDD Adventure",
+    sub:"Adventure Awaits: Forge New Paths to Partnership",
     detail:
       "This unique outdoors event blends the spirit of adventure with entrepreneurship, inviting participants to engage in hiking and nature activities. Aimed at fostering connections in a natural setting, this program encourages entrepreneurs to explore new paths to partnership and collaboration away from the traditional boardroom.",
     icon: iconMap["Group Trips"],
   },
   {
     title:
-      "TDD Spotlight | Disruptive Diaries:  Stories Behind Tomorrow’s Trailblazers",
+      "TDD Spotlight",
+      sub:"Disruptive Diaries:  Stories Behind Tomorrow’s Trailblazers",
     detail:
       "Spotlight offers a platform for emerging entrepreneurs to share their journeys and gain visibility among industry peers and potential investors. Featuring presentations and interviews with up-and-coming disruptors, this initiative sheds light on the innovative methods and personal stories of the next generation of trailblazers",
     icon: iconMap["Personal Growth"],

@@ -55,30 +55,37 @@ const Index = () => {
               }}
             />
           </Grid>
-          <Grid container justifyContent="center" spacing={2} p={5}>
+
+          <Grid container justifyContent="center" spacing={2} p={3}>
             {data.map((item, idx) => (
               <Grid key={idx} item xs={12} sm={6} style={{ width: "100%" }}>
-                <Paper
-                  elevation={3}
-                  sx={{
-                    minHeight: "300px",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: "20px",
-                    textAlign: "center",
-                    borderRadius: "15px",
-                  }}
-                >
-                  <item.icon sx={{ fontSize: 60, color: "#F2B31D" }} />
-                  <br />
-                  <Typography variant="h5" gutterBottom>
-                    {item.title}
-                  </Typography>
-                  <br />
-                  <Typography variant="body1">{item.detail}</Typography>
-                </Paper>
+                <Grid container justifyContent="center">
+                  <Paper
+                    elevation={3}
+                    sx={{
+                      minHeight: "350px",
+                      maxWidth: "800px",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      padding: "20px",
+                      textAlign: "center",
+                      borderRadius: "15px",
+                    }}
+                  >
+                    <item.icon sx={{ fontSize: 60, color: "#F2B31D" }} />
+                    <br />
+                    <Typography variant="h5" gutterBottom>
+                      {item.title}
+                    </Typography>
+                    <Typography variant="body1"  color="text.secondary">
+                    {item.sub}
+                    </Typography>
+                    <br />
+                    <Typography variant="body1">{item.detail}</Typography>
+                  </Paper>
+                </Grid>
               </Grid>
             ))}
           </Grid>

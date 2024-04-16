@@ -16,7 +16,7 @@ const Contact = () => {
       </Grid>
       <Grid item xs={12} sm={6} sx={{ paddingLeft: 2 }}>
         <ListItem>
-          <Typography>
+          <Typography variant="h5">
             Leave your email and we will get back to you within 24 hours
           </Typography>
         </ListItem>
@@ -24,19 +24,19 @@ const Contact = () => {
           <ListItemIcon>
             <EmailIcon />
           </ListItemIcon>
-          <Typography>contact@thedisruptorsden.org</Typography>
+          <Typography variant="h5">contact@thedisruptorsden.org</Typography>
         </ListItem>
         <ListItem>
           <ListItemIcon>
             <LocalPhoneIcon />
           </ListItemIcon>
-          <Typography>+251-9-133-985-61</Typography>
+          <Typography variant="h5">+251-9-133-985-61</Typography>
         </ListItem>
         <ListItem>
           <ListItemIcon>
             <LocationOnIcon />
           </ListItemIcon>
-          <Typography>ALX Ethiopia 22 Hub</Typography>
+          <Typography variant="h5">ALX Ethiopia 22 Hub</Typography>
         </ListItem>
       </Grid>
       <Grid

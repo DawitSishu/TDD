@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Typography, useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
-import { Facebook, Instagram, YouTube } from "@mui/icons-material";
 import { Box, TextField, Button } from "@mui/material";
-import { styled } from "@mui/system";
 import footerBackgroundImage from "../../assets/Tddfotter2.jpg";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import TelegramIcon from "@mui/icons-material/Telegram";
+import { Instagram, YouTube, Facebook } from "@mui/icons-material";
 
 const TikTokIcon = ({ color = "white" }) => {
   return (
@@ -32,7 +31,6 @@ export default function Footer() {
     <Box
       sx={{
         backgroundImage: `url(${footerBackgroundImage})`,
-        // paddingTop: "50px",
         backgroundSize: "cover",
         backgroundPosition: "95% 45%",
       }}
@@ -41,6 +39,7 @@ export default function Footer() {
         sx={{
           backgroundColor: "#000000",
           opacity: "80%",
+          width: "100%",
           p: isMobile ? "15px" : null,
         }}
       >
@@ -48,12 +47,14 @@ export default function Footer() {
           component="footer"
           sx={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "space-around",
+            width: "100%",
+            alignItems: "center",
+            flexDirection: isMobile ? "column" : "row",
             paddingTop: "50px",
           }}
         >
-          <Grid container spacing={2} justifyContent="center">
-    
+          <Grid container spacing={2} justifyContent="space-around">
             <Grid item xs={12} sm={5} ml={isMobile ? null : 3}>
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Link
@@ -70,11 +71,6 @@ export default function Footer() {
                     sx={{
                       fontWeight: "bold",
                       color: "#eee2b1",
-                      // "&:hover": {
-                      //   transform: "scale(1.1)",
-                      //   borderBottom: "5px solid #0000ff",
-                      //   elevation: "0",
-                      // },
                     }}
                   >
                     CONTACT US
@@ -85,7 +81,6 @@ export default function Footer() {
                   color="text.secondary"
                   sx={{ fontSize: isMobile ? "18px" : null, color: "#ffffff" }}
                 >
-                  {/* {lang[3]}{" "} */}
                   <EmailIcon /> contact@thedisruptorsden.org
                 </Typography>
                 <Typography
@@ -106,88 +101,68 @@ export default function Footer() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={5}>
-              <Typography
-                variant="h5"
-                gutterBottom
-                sx={{ fontWeight: "bold", color: "#eee2b1" }}
-                color="primary"
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  alignItems: "flex-end",
+                  flexDirection: "column",
+                  mr: 5,
+                }}
               >
-                FOLLOW US
-              </Typography>
-              <Link
-                to="https://www.linkedin.com/company/disruptorsden/"
-                color="inherit"
-                target="_blank"
-              >
-                <LinkedInIcon
-                  sx={{ height: "38px", width: "40px", color: "#ffffff" }}
-                />
-              </Link>
-              <Link
-                to="https://www.instagram.com/the_disruptors_den/"
-                color="inherit"
-                sx={{ pl: 1, pr: 1 }}
-                target="_blank"
-              >
-                <Instagram
-                  sx={{ height: "38px", width: "40px", color: "#ffffff" }}
-                />
-              </Link>
-              <Link
-                to="https://t.me/disruptorsden"
-                color="inherit"
-                target="_blank"
-                sx={{ pl: 1, pr: 1 }}
-              >
-                <TelegramIcon
-                  sx={{ height: "38px", width: "40px", color: "#ffffff" }}
-                />
-              </Link>
-              <Link
-                to="https://www.youtube.com/@the_disruptors_den"
-                color="inherit"
-                target="_blank"
-              >
-                <YouTube
-                  sx={{ height: "40px", width: "40px", color: "#ffffff" }}
-                />
-              </Link>
-              <Typography
-                variant={isMobile ? null : "h6"}
-                sx={{ fontSize: isMobile ? "18px" : null, color: "#ffffff" }}
-                color="text.secondary"
-                width="100%"
-              >
-                Developed By{" "}
-                <Link
-                  to="https://www.linkedin.com/in/dawitsishu/"
-                  target="_blank"
-                  style={{
-                    textDecoration: "none",
-                    fontWeight: "bold",
-                    color: "#eee2b1",
-                  }}
+                <Typography
+                  variant="h5"
+                  gutterBottom
+                  sx={{ fontWeight: "bold", color: "#eee2b1" }}
+                  color="primary"
                 >
-                  Dawit
-                </Link>{" "}
-                &{" "}
-                <Link
-                  to="https://www.linkedin.com/in/dagim-wallelgne/"
-                  target="_blank"
-                  style={{
-                    textDecoration: "none",
-                    fontWeight: "bold",
-                    color: "#eee2b1",
-                  }}
-                >
-                  Dagim
-                </Link>
-                {"."}
-              </Typography>
+                  FOLLOW US
+                </Typography>
+                <Box>
+                  <Link
+                    to="https://www.linkedin.com/company/disruptorsden/"
+                    color="inherit"
+                    target="_blank"
+                  >
+                    <LinkedInIcon
+                      sx={{ height: "38px", width: "40px", color: "#ffffff" }}
+                    />
+                  </Link>
+                  <Link
+                    to="https://www.instagram.com/the_disruptors_den/"
+                    color="inherit"
+                    sx={{ pl: 1, pr: 1 }}
+                    target="_blank"
+                  >
+                    <Instagram
+                      sx={{ height: "38px", width: "40px", color: "#ffffff" }}
+                    />
+                  </Link>
+                  <Link
+                    to="https://t.me/disruptorsden"
+                    color="inherit"
+                    target="_blank"
+                    sx={{ pl: 1, pr: 1 }}
+                  >
+                    <TelegramIcon
+                      sx={{ height: "38px", width: "40px", color: "#ffffff" }}
+                    />
+                  </Link>
+                  <Link
+                    to="https://www.youtube.com/@the_disruptors_den"
+                    color="inherit"
+                    target="_blank"
+                  >
+                    <YouTube
+                      sx={{ height: "40px", width: "40px", color: "#ffffff" }}
+                    />
+                  </Link>
+                </Box>
+              </Box>
             </Grid>
           </Grid>
         </Box>
-        <Box mt={5}>
+        <Box >
           <Typography
             variant={isMobile ? null : "h6"}
             sx={{ fontSize: isMobile ? "18px" : null, color: "#ffffff" }}
@@ -209,7 +184,39 @@ export default function Footer() {
             {"."}
           </Typography>
         </Box>
-        <br />
+        <Typography
+          variant={isMobile ? null : "h6"}
+          sx={{ fontSize: isMobile ? "18px" : null, color: "#ffffff" }}
+          color="text.secondary"
+          width="100%"
+          textAlign="center"
+        >
+          Developed By{" "}
+          <Link
+            to="https://www.linkedin.com/in/dawitsishu/"
+            target="_blank"
+            style={{
+              textDecoration: "none",
+              fontWeight: "bold",
+              color: "#eee2b1",
+            }}
+          >
+            Dawit
+          </Link>{" "}
+          &{" "}
+          <Link
+            to="https://www.linkedin.com/in/dagim-wallelgne/"
+            target="_blank"
+            style={{
+              textDecoration: "none",
+              fontWeight: "bold",
+              color: "#eee2b1",
+            }}
+          >
+            Dagim
+          </Link>
+          {"."}
+        </Typography>
       </Box>
     </Box>
   );
