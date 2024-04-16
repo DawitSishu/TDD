@@ -53,28 +53,8 @@ export default function Footer() {
           }}
         >
           <Grid container spacing={2} justifyContent="center">
-            <Grid item xs={12} sm={3}>
-              <Typography
-                variant="h5"
-                color="primary"
-                gutterBottom
-                sx={{ fontWeight: "bold", color: "#eee2b1" }}
-              >
-                The Disruptors Den
-              </Typography>
-              <Typography
-                color="text.secondary"
-                variant={isMobile ? null : "h6"}
-                sx={{ fontSize: isMobile ? "18px" : null, color: "white" }}
-              >
-                The Disruptors Den is home to entrepreneurs and aspiring ones
-                seeking to challenge the status quo and create innovative
-                solutions to current problems. In this dynamic environment,
-                anything is possible, and the only limit is one's own
-                imagination.
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={4} ml={isMobile ? null : 3}>
+    
+            <Grid item xs={12} sm={5} ml={isMobile ? null : 3}>
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Link
                   to="/Serviços"
@@ -125,7 +105,7 @@ export default function Footer() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={2}>
+            <Grid item xs={12} sm={5}>
               <Typography
                 variant="h5"
                 gutterBottom
